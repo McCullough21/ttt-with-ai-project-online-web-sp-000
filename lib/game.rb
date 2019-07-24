@@ -15,6 +15,10 @@ def new_game
      Self.new(Players::Human.new("X"), Players::Computer.new("O"), Board.new)
    elsif input == 1 && first_player == "Them"
      Self.new(Players::Computer.new("X"), Players::Human.new("O"), Board.new)
+   elsif input == 2 && first_player == "I Will"
+     Self.new(Players::Human.new("X"), Players::Human.new("O"), Board.new)
+   end
+end
 
 def initialize(player_1=Players::Human.new("X"), player_2=Players::Human.new("O"), board=Board.new)
   @board = board
