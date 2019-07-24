@@ -3,8 +3,9 @@
 require_relative '../config/environment'
 
 puts "Welcome to Tic Tac Toe!"
-puts "Would you like to play a 0, 1, or 2 player game; and If you would like to go first and be player X, enter (I Will), if not, enter (Them)."
-input = gets.strip
-
-
+puts "Would you like to play a 0, 1, or 2 player game?"
+input = gets.strip.to_i
+end
+puts "If you would like to go first and be player X, enter (I Will), if not, enter (Them)."
+first_player == gets.strip
 Game.new_game
