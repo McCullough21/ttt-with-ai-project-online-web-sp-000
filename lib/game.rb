@@ -18,7 +18,7 @@ def self.new_game
      self.new(Players::Computer.new("X"), Players::Human.new("O"), Board.new).play
    elsif input == 2 && first_player == "I Will"
      self.new(Players::Human.new("X"), Players::Human.new("O"), Board.new).play
-   end 
+   end
    puts "Would you like to play again? (Y or N)"
      if gets.strip == "Y"
        new_game
