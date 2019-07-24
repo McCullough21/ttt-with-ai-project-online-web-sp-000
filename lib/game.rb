@@ -24,6 +24,7 @@ puts "Would you like to play again? (Y or N)"
   if gets.strip == "Y"
     new_game
   else
+    puts "Goodbye, thank you for playing!"
 end
 
 def initialize(player_1=Players::Human.new("X"), player_2=Players::Human.new("O"), board=Board.new)
