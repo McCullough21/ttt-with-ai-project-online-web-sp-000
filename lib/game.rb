@@ -11,13 +11,13 @@ def self.new_game
   puts "If you would like to go first and be player X, enter (I Will), if not, enter (Them)."
   first_player = gets.strip
    if input == 0
-     Self.new(Players::Computer.new("X"), Players::Computer.new("O"), Board.new)
+     self.new(Players::Computer.new("X"), Players::Computer.new("O"), Board.new)
    elsif input == 1 && first_player == "I Will"
-     Self.new(Players::Human.new("X"), Players::Computer.new("O"), Board.new)
+     self.new(Players::Human.new("X"), Players::Computer.new("O"), Board.new)
    elsif input == 1 && first_player == "Them"
-     Self.new(Players::Computer.new("X"), Players::Human.new("O"), Board.new)
+     self.new(Players::Computer.new("X"), Players::Human.new("O"), Board.new)
    elsif input == 2 && first_player == "I Will"
-     Self.new(Players::Human.new("X"), Players::Human.new("O"), Board.new)
+     self.new(Players::Human.new("X"), Players::Human.new("O"), Board.new)
    end
    self.play
 
