@@ -21,7 +21,7 @@ def new_game
   play
 end
 puts "Would you like to play again? (Y or N)"
-  if gets.strip == "Y" 
+  if gets.strip == "Y"
     new_game
   else
 end
