@@ -18,6 +18,12 @@ def new_game
    elsif input == 2 && first_player == "I Will"
      Self.new(Players::Human.new("X"), Players::Human.new("O"), Board.new)
    end
+  play
+end
+puts "Would you like to play again? (Y or N)"
+  if gets.strip == "Y" 
+    new_game
+  else
 end
 
 def initialize(player_1=Players::Human.new("X"), player_2=Players::Human.new("O"), board=Board.new)
