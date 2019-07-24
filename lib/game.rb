@@ -19,6 +19,7 @@ def new_game
      Self.new(Players::Human.new("X"), Players::Human.new("O"), Board.new)
    end
    play
+   
  end
 # puts "Would you like to play again? (Y or N)"
 #   if gets.strip == "Y"
