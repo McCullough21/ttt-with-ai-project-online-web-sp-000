@@ -5,10 +5,6 @@ class Game
 attr_accessor :board, :player_1, :player_2
 
 def self.new_game
-  puts "Would you like to play a 0, 1, or 2 player game?"
-  input = gets.strip.to_i
-  puts "If you would like to go first and be player X, enter (I Will), if not, enter (Them)."
-  first_player == gets.strip
    if input == 0
      Self.new(Players::Computer.new("X"), Players::Computer.new("O"), Board.new)
    elsif input == 1 && first_player == "I Will"
